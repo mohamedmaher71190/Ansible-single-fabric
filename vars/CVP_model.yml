@@ -1,265 +1,141 @@
-path: "/home/coder/project/persist/Ansible_config_gen/generated_config" 
+path: "/home/coder/project/labfiles/AnsibleFabric/generated_config" 
 
 CVP_CONFIGLETS_EVPN:
-  spine1-DC1_underlay: "{{lookup('file','{{path}}/spine1-DC1/spine1-DC1_underlay.cfg')}}"
-  spine1-DC1_underlay_BGP: "{{lookup('file','{{path}}/spine1-DC1/spine1-DC1_underlay_BGP.cfg')}}"
-  spine1-DC1_overlay_BGP: "{{lookup('file','{{path}}/spine1-DC1/spine1-DC1_overlay_BGP.cfg')}}"
-  spine1-DC1_EVPN: "{{lookup('file','{{path}}/spine1-DC1/spine1-DC1_EVPN.cfg')}}"
-  spine2-DC1_underlay: "{{lookup('file','{{path}}/spine2-DC1/spine2-DC1_underlay.cfg')}}"
-  spine2-DC1_underlay_BGP: "{{lookup('file','{{path}}/spine2-DC1/spine2-DC1_underlay_BGP.cfg')}}"
-  spine2-DC1_overlay_BGP: "{{lookup('file','{{path}}/spine2-DC1/spine2-DC1_overlay_BGP.cfg')}}"
-  spine2-DC1_EVPN: "{{lookup('file','{{path}}/spine2-DC1/spine2-DC1_EVPN.cfg')}}"
-  spine3-DC1_underlay: "{{lookup('file','{{path}}/spine3-DC1/spine3-DC1_underlay.cfg')}}"
-  spine3-DC1_underlay_BGP: "{{lookup('file','{{path}}/spine3-DC1/spine3-DC1_underlay_BGP.cfg')}}"
-  spine3-DC1_overlay_BGP: "{{lookup('file','{{path}}/spine3-DC1/spine3-DC1_overlay_BGP.cfg')}}"
-  spine3-DC1_EVPN: "{{lookup('file','{{path}}/spine3-DC1/spine3-DC1_EVPN.cfg')}}"
-  leaf1-DC1_underlay: "{{lookup('file','{{path}}/leaf1-DC1/leaf1-DC1_underlay.cfg')}}"
-  leaf1-DC1_underlay_BGP: "{{lookup('file','{{path}}/leaf1-DC1/leaf1-DC1_underlay_BGP.cfg')}}"
-  leaf1-DC1_overlay_BGP: "{{lookup('file','{{path}}/leaf1-DC1/leaf1-DC1_overlay_BGP.cfg')}}"
-  leaf1-DC1_EVPN: "{{lookup('file','{{path}}/leaf1-DC1/leaf1-DC1_EVPN.cfg')}}"
-  leaf1-DC1_mlag: "{{lookup('file','{{path}}/leaf1-DC1/leaf1-DC1_mlag.cfg')}}"
-  leaf2-DC1_underlay: "{{lookup('file','{{path}}/leaf2-DC1/leaf2-DC1_underlay.cfg')}}"
-  leaf2-DC1_underlay_BGP: "{{lookup('file','{{path}}/leaf2-DC1/leaf2-DC1_underlay_BGP.cfg')}}"
-  leaf2-DC1_overlay_BGP: "{{lookup('file','{{path}}/leaf2-DC1/leaf2-DC1_overlay_BGP.cfg')}}"
-  leaf2-DC1_EVPN: "{{lookup('file','{{path}}/leaf2-DC1/leaf2-DC1_EVPN.cfg')}}"
-  leaf2-DC1_mlag: "{{lookup('file','{{path}}/leaf2-DC1/leaf2-DC1_mlag.cfg')}}"
-  leaf3-DC1_underlay: "{{lookup('file','{{path}}/leaf3-DC1/leaf3-DC1_underlay.cfg')}}"
-  leaf3-DC1_underlay_BGP: "{{lookup('file','{{path}}/leaf3-DC1/leaf3-DC1_underlay_BGP.cfg')}}"
-  leaf3-DC1_overlay_BGP: "{{lookup('file','{{path}}/leaf3-DC1/leaf3-DC1_overlay_BGP.cfg')}}"
-  leaf3-DC1_EVPN: "{{lookup('file','{{path}}/leaf3-DC1/leaf3-DC1_EVPN.cfg')}}"
-  leaf3-DC1_mlag: "{{lookup('file','{{path}}/leaf3-DC1/leaf3-DC1_mlag.cfg')}}"
-  leaf4-DC1_underlay: "{{lookup('file','{{path}}/leaf4-DC1/leaf4-DC1_underlay.cfg')}}"
-  leaf4-DC1_underlay_BGP: "{{lookup('file','{{path}}/leaf4-DC1/leaf4-DC1_underlay_BGP.cfg')}}"
-  leaf4-DC1_overlay_BGP: "{{lookup('file','{{path}}/leaf4-DC1/leaf4-DC1_overlay_BGP.cfg')}}"
-  leaf4-DC1_EVPN: "{{lookup('file','{{path}}/leaf4-DC1/leaf4-DC1_EVPN.cfg')}}"
-  leaf4-DC1_mlag: "{{lookup('file','{{path}}/leaf4-DC1/leaf4-DC1_mlag.cfg')}}"
-  borderleaf1-DC1_underlay: "{{lookup('file','{{path}}/borderleaf1-DC1/borderleaf1-DC1_underlay.cfg')}}"
-  borderleaf1-DC1_underlay_BGP: "{{lookup('file','{{path}}/borderleaf1-DC1/borderleaf1-DC1_underlay_BGP.cfg')}}"
-  borderleaf1-DC1_overlay_BGP: "{{lookup('file','{{path}}/borderleaf1-DC1/borderleaf1-DC1_overlay_BGP.cfg')}}"
-  borderleaf1-DC1_EVPN: "{{lookup('file','{{path}}/borderleaf1-DC1/borderleaf1-DC1_EVPN.cfg')}}"
-  borderleaf1-DC1_mlag: "{{lookup('file','{{path}}/borderleaf1-DC1/borderleaf1-DC1_mlag.cfg')}}"
-  borderleaf2-DC1_underlay: "{{lookup('file','{{path}}/borderleaf2-DC1/borderleaf2-DC1_underlay.cfg')}}"
-  borderleaf2-DC1_underlay_BGP: "{{lookup('file','{{path}}/borderleaf2-DC1/borderleaf2-DC1_underlay_BGP.cfg')}}"
-  borderleaf2-DC1_overlay_BGP: "{{lookup('file','{{path}}/borderleaf2-DC1/borderleaf2-DC1_overlay_BGP.cfg')}}"
-  borderleaf2-DC1_EVPN: "{{lookup('file','{{path}}/borderleaf2-DC1/borderleaf2-DC1_EVPN.cfg')}}"
-  borderleaf2-DC1_mlag: "{{lookup('file','{{path}}/borderleaf2-DC1/borderleaf2-DC1_mlag.cfg')}}"
-  spine1-DC2_underlay: "{{lookup('file','{{path}}/spine1-DC2/spine1-DC2_underlay.cfg')}}"
-  spine1-DC2_underlay_BGP: "{{lookup('file','{{path}}/spine1-DC2/spine1-DC2_underlay_BGP.cfg')}}"
-  spine1-DC2_overlay_BGP: "{{lookup('file','{{path}}/spine1-DC2/spine1-DC2_overlay_BGP.cfg')}}"
-  spine1-DC2_EVPN: "{{lookup('file','{{path}}/spine1-DC2/spine1-DC2_EVPN.cfg')}}"
-  spine2-DC2_underlay: "{{lookup('file','{{path}}/spine2-DC2/spine2-DC2_underlay.cfg')}}"
-  spine2-DC2_underlay_BGP: "{{lookup('file','{{path}}/spine2-DC2/spine2-DC2_underlay_BGP.cfg')}}"
-  spine2-DC2_overlay_BGP: "{{lookup('file','{{path}}/spine2-DC2/spine2-DC2_overlay_BGP.cfg')}}"
-  spine2-DC2_EVPN: "{{lookup('file','{{path}}/spine2-DC2/spine2-DC2_EVPN.cfg')}}"
-  spine3-DC2_underlay: "{{lookup('file','{{path}}/spine3-DC2/spine3-DC2_underlay.cfg')}}"
-  spine3-DC2_underlay_BGP: "{{lookup('file','{{path}}/spine3-DC2/spine3-DC2_underlay_BGP.cfg')}}"
-  spine3-DC2_overlay_BGP: "{{lookup('file','{{path}}/spine3-DC2/spine3-DC2_overlay_BGP.cfg')}}"
-  spine3-DC2_EVPN: "{{lookup('file','{{path}}/spine3-DC2/spine3-DC2_EVPN.cfg')}}"
-  leaf1-DC2_underlay: "{{lookup('file','{{path}}/leaf1-DC2/leaf1-DC2_underlay.cfg')}}"
-  leaf1-DC2_underlay_BGP: "{{lookup('file','{{path}}/leaf1-DC2/leaf1-DC2_underlay_BGP.cfg')}}"
-  leaf1-DC2_overlay_BGP: "{{lookup('file','{{path}}/leaf1-DC2/leaf1-DC2_overlay_BGP.cfg')}}"
-  leaf1-DC2_EVPN: "{{lookup('file','{{path}}/leaf1-DC2/leaf1-DC2_EVPN.cfg')}}"
-  leaf1-DC2_mlag: "{{lookup('file','{{path}}/leaf1-DC2/leaf1-DC2_mlag.cfg')}}"
-  leaf2-DC2_underlay: "{{lookup('file','{{path}}/leaf2-DC2/leaf2-DC2_underlay.cfg')}}"
-  leaf2-DC2_underlay_BGP: "{{lookup('file','{{path}}/leaf2-DC2/leaf2-DC2_underlay_BGP.cfg')}}"
-  leaf2-DC2_overlay_BGP: "{{lookup('file','{{path}}/leaf2-DC2/leaf2-DC2_overlay_BGP.cfg')}}"
-  leaf2-DC2_EVPN: "{{lookup('file','{{path}}/leaf2-DC2/leaf2-DC2_EVPN.cfg')}}"
-  leaf2-DC2_mlag: "{{lookup('file','{{path}}/leaf2-DC2/leaf2-DC2_mlag.cfg')}}"
-  leaf3-DC2_underlay: "{{lookup('file','{{path}}/leaf3-DC2/leaf3-DC2_underlay.cfg')}}"
-  leaf3-DC2_underlay_BGP: "{{lookup('file','{{path}}/leaf3-DC2/leaf3-DC2_underlay_BGP.cfg')}}"
-  leaf3-DC2_overlay_BGP: "{{lookup('file','{{path}}/leaf3-DC2/leaf3-DC2_overlay_BGP.cfg')}}"
-  leaf3-DC2_EVPN: "{{lookup('file','{{path}}/leaf3-DC2/leaf3-DC2_EVPN.cfg')}}"
-  leaf3-DC2_mlag: "{{lookup('file','{{path}}/leaf3-DC2/leaf3-DC2_mlag.cfg')}}"
-  leaf4-DC2_underlay: "{{lookup('file','{{path}}/leaf4-DC2/leaf4-DC2_underlay.cfg')}}"
-  leaf4-DC2_underlay_BGP: "{{lookup('file','{{path}}/leaf4-DC2/leaf4-DC2_underlay_BGP.cfg')}}"
-  leaf4-DC2_overlay_BGP: "{{lookup('file','{{path}}/leaf4-DC2/leaf4-DC2_overlay_BGP.cfg')}}"
-  leaf4-DC2_EVPN: "{{lookup('file','{{path}}/leaf4-DC2/leaf4-DC2_EVPN.cfg')}}"
-  leaf4-DC2_mlag: "{{lookup('file','{{path}}/leaf4-DC2/leaf4-DC2_mlag.cfg')}}"
-  borderleaf1-DC2_underlay: "{{lookup('file','{{path}}/borderleaf1-DC2/borderleaf1-DC2_underlay.cfg')}}"
-  borderleaf1-DC2_underlay_BGP: "{{lookup('file','{{path}}/borderleaf1-DC2/borderleaf1-DC2_underlay_BGP.cfg')}}"
-  borderleaf1-DC2_overlay_BGP: "{{lookup('file','{{path}}/borderleaf1-DC2/borderleaf1-DC2_overlay_BGP.cfg')}}"
-  borderleaf1-DC2_EVPN: "{{lookup('file','{{path}}/borderleaf1-DC2/borderleaf1-DC2_EVPN.cfg')}}"
-  borderleaf1-DC2_mlag: "{{lookup('file','{{path}}/borderleaf1-DC2/borderleaf1-DC2_mlag.cfg')}}"
-  borderleaf2-DC2_underlay: "{{lookup('file','{{path}}/borderleaf2-DC2/borderleaf2-DC2_underlay.cfg')}}"
-  borderleaf2-DC2_underlay_BGP: "{{lookup('file','{{path}}/borderleaf2-DC2/borderleaf2-DC2_underlay_BGP.cfg')}}"
-  borderleaf2-DC2_overlay_BGP: "{{lookup('file','{{path}}/borderleaf2-DC2/borderleaf2-DC2_overlay_BGP.cfg')}}"
-  borderleaf2-DC2_EVPN: "{{lookup('file','{{path}}/borderleaf2-DC2/borderleaf2-DC2_EVPN.cfg')}}"
-  borderleaf2-DC2_mlag: "{{lookup('file','{{path}}/borderleaf2-DC2/borderleaf2-DC2_mlag.cfg')}}"
+  spine1_underlay: "{{lookup('file','{{path}}/spine1/spine1_underlay.cfg')}}"
+  spine1_underlay_BGP: "{{lookup('file','{{path}}/spine1/spine1_underlay_BGP.cfg')}}"
+  spine1_overlay_BGP: "{{lookup('file','{{path}}/spine1/spine1_overlay_BGP.cfg')}}"
+  spine1_EVPN: "{{lookup('file','{{path}}/spine1/spine1_EVPN.cfg')}}"
+  spine2_underlay: "{{lookup('file','{{path}}/spine2/spine2_underlay.cfg')}}"
+  spine2_underlay_BGP: "{{lookup('file','{{path}}/spine2/spine2_underlay_BGP.cfg')}}"
+  spine2_overlay_BGP: "{{lookup('file','{{path}}/spine2/spine2_overlay_BGP.cfg')}}"
+  spine2_EVPN: "{{lookup('file','{{path}}/spine2/spine2_EVPN.cfg')}}"
+  spine3_underlay: "{{lookup('file','{{path}}/spine3/spine3_underlay.cfg')}}"
+  spine3_underlay_BGP: "{{lookup('file','{{path}}/spine3/spine3_underlay_BGP.cfg')}}"
+  spine3_overlay_BGP: "{{lookup('file','{{path}}/spine3/spine3_overlay_BGP.cfg')}}"
+  spine3_EVPN: "{{lookup('file','{{path}}/spine3/spine3_EVPN.cfg')}}"
+  spine4_underlay: "{{lookup('file','{{path}}/spine4/spine4_underlay.cfg')}}"
+  spine4_underlay_BGP: "{{lookup('file','{{path}}/spine4/spine4_underlay_BGP.cfg')}}"
+  spine4_overlay_BGP: "{{lookup('file','{{path}}/spine4/spine4_overlay_BGP.cfg')}}"
+  spine4_EVPN: "{{lookup('file','{{path}}/spine4/spine4_EVPN.cfg')}}"
+  leaf1_underlay: "{{lookup('file','{{path}}/leaf1/leaf1_underlay.cfg')}}"
+  leaf1_underlay_BGP: "{{lookup('file','{{path}}/leaf1/leaf1_underlay_BGP.cfg')}}"
+  leaf1_overlay_BGP: "{{lookup('file','{{path}}/leaf1/leaf1_overlay_BGP.cfg')}}"
+  leaf1_EVPN: "{{lookup('file','{{path}}/leaf1/leaf1_EVPN.cfg')}}"
+  leaf1_mlag: "{{lookup('file','{{path}}/leaf1/leaf1_mlag.cfg')}}"
+  leaf2_underlay: "{{lookup('file','{{path}}/leaf2/leaf2_underlay.cfg')}}"
+  leaf2_underlay_BGP: "{{lookup('file','{{path}}/leaf2/leaf2_underlay_BGP.cfg')}}"
+  leaf2_overlay_BGP: "{{lookup('file','{{path}}/leaf2/leaf2_overlay_BGP.cfg')}}"
+  leaf2_EVPN: "{{lookup('file','{{path}}/leaf2/leaf2_EVPN.cfg')}}"
+  leaf2_mlag: "{{lookup('file','{{path}}/leaf2/leaf2_mlag.cfg')}}"
+  leaf3_underlay: "{{lookup('file','{{path}}/leaf3/leaf3_underlay.cfg')}}"
+  leaf3_underlay_BGP: "{{lookup('file','{{path}}/leaf3/leaf3_underlay_BGP.cfg')}}"
+  leaf3_overlay_BGP: "{{lookup('file','{{path}}/leaf3/leaf3_overlay_BGP.cfg')}}"
+  leaf3_EVPN: "{{lookup('file','{{path}}/leaf3/leaf3_EVPN.cfg')}}"
+  leaf3_mlag: "{{lookup('file','{{path}}/leaf3/leaf3_mlag.cfg')}}"
+  leaf4_underlay: "{{lookup('file','{{path}}/leaf4/leaf4_underlay.cfg')}}"
+  leaf4_underlay_BGP: "{{lookup('file','{{path}}/leaf4/leaf4_underlay_BGP.cfg')}}"
+  leaf4_overlay_BGP: "{{lookup('file','{{path}}/leaf4/leaf4_overlay_BGP.cfg')}}"
+  leaf4_EVPN: "{{lookup('file','{{path}}/leaf4/leaf4_EVPN.cfg')}}"
+  leaf4_mlag: "{{lookup('file','{{path}}/leaf4/leaf4_mlag.cfg')}}"
+  borderleaf1_underlay: "{{lookup('file','{{path}}/borderleaf1/borderleaf1_underlay.cfg')}}"
+  borderleaf1_underlay_BGP: "{{lookup('file','{{path}}/borderleaf1/borderleaf1_underlay_BGP.cfg')}}"
+  borderleaf1_overlay_BGP: "{{lookup('file','{{path}}/borderleaf1/borderleaf1_overlay_BGP.cfg')}}"
+  borderleaf1_EVPN: "{{lookup('file','{{path}}/borderleaf1/borderleaf1_EVPN.cfg')}}"
+  borderleaf1_mlag: "{{lookup('file','{{path}}/borderleaf1/borderleaf1_mlag.cfg')}}"
+  borderleaf2_underlay: "{{lookup('file','{{path}}/borderleaf2/borderleaf2_underlay.cfg')}}"
+  borderleaf2_underlay_BGP: "{{lookup('file','{{path}}/borderleaf2/borderleaf2_underlay_BGP.cfg')}}"
+  borderleaf2_overlay_BGP: "{{lookup('file','{{path}}/borderleaf2/borderleaf2_overlay_BGP.cfg')}}"
+  borderleaf2_EVPN: "{{lookup('file','{{path}}/borderleaf2/borderleaf2_EVPN.cfg')}}"
+  borderleaf2_mlag: "{{lookup('file','{{path}}/borderleaf2/borderleaf2_mlag.cfg')}}"
+
   
 
 CVP_DEVICES_EVPN:
 
-  - fqdn: 'spine1-DC1'
-    parentContainerName: 'Spine-DC1'
+  - fqdn: 'spine1'
+    parentContainerName: 'Spine'
     configlets:
       - 'ATD-INFRA'
-      - 'spine1-DC1-BASE'
-      - 'spine1-DC1_underlay'
-      - 'spine1-DC1_underlay_BGP'
-      - 'spine1-DC1_overlay_BGP'
-      - 'spine1-DC1_EVPN'
-  - fqdn: 'spine2-DC1'
-    parentContainerName: 'Spine-DC1'
+      - 'spine1_underlay'
+      - 'spine1_underlay_BGP'
+      - 'spine1_overlay_BGP'
+      - 'spine1_EVPN'
+  - fqdn: 'spine2'
+    parentContainerName: 'Spine'
     configlets:
       - 'ATD-INFRA'
-      - 'spine2-DC1-BASE'
-      - 'spine2-DC1_underlay'
-      - 'spine2-DC1_underlay_BGP'
-      - 'spine2-DC1_overlay_BGP'
-      - 'spine2-DC1_EVPN'
-  - fqdn: 'spine3-DC1'
-    parentContainerName: 'Spine-DC1'
+      - 'spine2_underlay'
+      - 'spine2_underlay_BGP'
+      - 'spine2_overlay_BGP'
+      - 'spine2_EVPN'
+  - fqdn: 'spine3'
+    parentContainerName: 'Spine'
     configlets:
       - 'ATD-INFRA'
-      - 'spine3-DC1-BASE'
-      - 'spine3-DC1_underlay'
-      - 'spine3-DC1_underlay_BGP'
-      - 'spine3-DC1_overlay_BGP'
-      - 'spine3-DC1_EVPN'
-  - fqdn: 'leaf1-DC1'
-    parentContainerName: 'Leaf-DC1'
+      - 'spine3_underlay'
+      - 'spine3_underlay_BGP'
+      - 'spine3_overlay_BGP'
+      - 'spine3_EVPN'
+  - fqdn: 'spine4'
+    parentContainerName: 'Spine'
     configlets:
       - 'ATD-INFRA'
-      - 'leaf1-DC1-BASE'
-      - 'leaf1-DC1_underlay'
-      - 'leaf1-DC1_underlay_BGP'
-      - 'leaf1-DC1_overlay_BGP'
-      - 'leaf1-DC1_EVPN'
-      - 'leaf1-DC1_mlag'
-  - fqdn: 'leaf2-DC1'
-    parentContainerName: 'Leaf-DC1'
+      - 'spine4_underlay'
+      - 'spine4_underlay_BGP'
+      - 'spine4_overlay_BGP'
+      - 'spine4_EVPN'
+  - fqdn: 'leaf1'
+    parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
-      - 'leaf2-DC1-BASE'
-      - 'leaf2-DC1_underlay'
-      - 'leaf2-DC1_underlay_BGP'
-      - 'leaf2-DC1_overlay_BGP'
-      - 'leaf2-DC1_EVPN'
-      - 'leaf2-DC1_mlag'
-  - fqdn: 'leaf3-DC1'
-    parentContainerName: 'Leaf-DC1'
+      - 'leaf1_underlay'
+      - 'leaf1_underlay_BGP'
+      - 'leaf1_overlay_BGP'
+      - 'leaf1_EVPN'
+      - 'leaf1_mlag'
+  - fqdn: 'leaf2'
+    parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
-      - 'leaf3-DC1-BASE'
-      - 'leaf3-DC1_underlay'
-      - 'leaf3-DC1_underlay_BGP'
-      - 'leaf3-DC1_overlay_BGP'
-      - 'leaf3-DC1_EVPN'
-      - 'leaf3-DC1_mlag'
-  - fqdn: 'leaf4-DC1'
-    parentContainerName: 'Leaf-DC1'
+      - 'leaf2_underlay'
+      - 'leaf2_underlay_BGP'
+      - 'leaf2_overlay_BGP'
+      - 'leaf2_EVPN'
+      - 'leaf2_mlag'
+  - fqdn: 'leaf3'
+    parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
-      - 'leaf4-DC1-BASE'
-      - 'leaf4-DC1_underlay'
-      - 'leaf4-DC1_underlay_BGP'
-      - 'leaf4-DC1_overlay_BGP'
-      - 'leaf4-DC1_EVPN'
-      - 'leaf4-DC1_mlag'
-  - fqdn: 'borderleaf1-DC1'
-    parentContainerName: 'Leaf-DC1'
+      - 'leaf3_underlay'
+      - 'leaf3_underlay_BGP'
+      - 'leaf3_overlay_BGP'
+      - 'leaf3_EVPN'
+      - 'leaf3_mlag'
+  - fqdn: 'leaf4'
+    parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
-      - 'borderleaf1-DC1-BASE'
-      - 'borderleaf1-DC1_underlay'
-      - 'borderleaf1-DC1_underlay_BGP'
-      - 'borderleaf1-DC1_overlay_BGP'
-      - 'borderleaf1-DC1_EVPN'
-      - 'borderleaf1-DC1_mlag'
-  - fqdn: 'borderleaf2-DC1'
-    parentContainerName: 'Leaf-DC1'
+      - 'leaf4_underlay'
+      - 'leaf4_underlay_BGP'
+      - 'leaf4_overlay_BGP'
+      - 'leaf4_EVPN'
+      - 'leaf4_mlag'
+  - fqdn: 'borderleaf1'
+    parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
-      - 'borderleaf2-DC1-BASE'
-      - 'borderleaf2-DC1_underlay'
-      - 'borderleaf2-DC1_underlay_BGP'
-      - 'borderleaf2-DC1_overlay_BGP'
-      - 'borderleaf2-DC1_EVPN'
-      - 'borderleaf2-DC1_mlag'
-  - fqdn: 'spine1-DC2'
-    parentContainerName: 'Spine-DC2'
+      - 'borderleaf1_underlay'
+      - 'borderleaf1_underlay_BGP'
+      - 'borderleaf1_overlay_BGP'
+      - 'borderleaf1_EVPN'
+      - 'borderleaf1_mlag'
+  - fqdn: 'borderleaf2'
+    parentContainerName: 'Leaf'
     configlets:
       - 'ATD-INFRA'
-      - 'spine1-DC2-BASE'
-      - 'spine1-DC2_underlay'
-      - 'spine1-DC2_underlay_BGP'
-      - 'spine1-DC2_overlay_BGP'
-      - 'spine1-DC2_EVPN'
-  - fqdn: 'spine2-DC2'
-    parentContainerName: 'Spine-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'spine2-DC2-BASE'
-      - 'spine2-DC2_underlay'
-      - 'spine2-DC2_underlay_BGP'
-      - 'spine2-DC2_overlay_BGP'
-      - 'spine2-DC2_EVPN'
-  - fqdn: 'spine3-DC2'
-    parentContainerName: 'Spine-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'spine3-DC2-BASE'
-      - 'spine3-DC2_underlay'
-      - 'spine3-DC2_underlay_BGP'
-      - 'spine3-DC2_overlay_BGP'
-      - 'spine3-DC2_EVPN'
-  - fqdn: 'leaf1-DC2'
-    parentContainerName: 'Leaf-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'leaf1-DC2-BASE'
-      - 'leaf1-DC2_underlay'
-      - 'leaf1-DC2_underlay_BGP'
-      - 'leaf1-DC2_overlay_BGP'
-      - 'leaf1-DC2_EVPN'
-      - 'leaf1-DC2_mlag'
-  - fqdn: 'leaf2-DC2'
-    parentContainerName: 'Leaf-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'leaf2-DC2-BASE'
-      - 'leaf2-DC2_underlay'
-      - 'leaf2-DC2_underlay_BGP'
-      - 'leaf2-DC2_overlay_BGP'
-      - 'leaf2-DC2_EVPN'
-      - 'leaf2-DC2_mlag'
-  - fqdn: 'leaf3-DC2'
-    parentContainerName: 'Leaf-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'leaf3-DC2-BASE'
-      - 'leaf3-DC2_underlay'
-      - 'leaf3-DC2_underlay_BGP'
-      - 'leaf3-DC2_overlay_BGP'
-      - 'leaf3-DC2_EVPN'
-      - 'leaf3-DC2_mlag'
-  - fqdn: 'leaf4-DC2'
-    parentContainerName: 'Leaf-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'leaf4-DC2-BASE'
-      - 'leaf4-DC2_underlay'
-      - 'leaf4-DC2_underlay_BGP'
-      - 'leaf4-DC2_overlay_BGP'
-      - 'leaf4-DC2_EVPN'
-      - 'leaf4-DC2_mlag'
-  - fqdn: 'borderleaf1-DC2'
-    parentContainerName: 'Leaf-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'borderleaf1-DC2-BASE'
-      - 'borderleaf1-DC2_underlay'
-      - 'borderleaf1-DC2_underlay_BGP'
-      - 'borderleaf1-DC2_overlay_BGP'
-      - 'borderleaf1-DC2_EVPN'
-      - 'borderleaf1-DC2_mlag'
-  - fqdn: 'borderleaf2-DC2'
-    parentContainerName: 'Leaf-DC2'
-    configlets:
-      - 'ATD-INFRA'
-      - 'borderleaf2-DC2-BASE'
-      - 'borderleaf2-DC2_underlay'
-      - 'borderleaf2-DC2_underlay_BGP'
-      - 'borderleaf2-DC2_overlay_BGP'
-      - 'borderleaf2-DC2_EVPN'
-      - 'borderleaf2-DC2_mlag'
+      - 'borderleaf2_underlay'
+      - 'borderleaf2_underlay_BGP'
+      - 'borderleaf2_overlay_BGP'
+      - 'borderleaf2_EVPN'
+      - 'borderleaf2_mlag'
+  

@@ -4,7 +4,7 @@
   connection: local
 
   vars_files: 
-     - /home/coder/project/persist/Ansible_config_gen/vars/CVP_model.yml
+     - /home/coder/project/labfiles/AnsibleFabric/vars/CVP_model.yml
   tasks:
     - name: Upload Configlets for EVPN Underlay
       arista.cvp.cv_configlet_v3:

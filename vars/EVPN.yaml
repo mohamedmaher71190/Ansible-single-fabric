@@ -1,5 +1,5 @@
 ---
-leaf1-DC1:
+leaf1:
   asn: 65101
   vrf: VRF-A
   vlans:
@@ -19,7 +19,7 @@ leaf1-DC1:
   vMAC: 00:1c:73:00:00:99
 
 
-leaf2-DC1:
+leaf2:
   asn: 65101
   vrf: VRF-A
   vlans:
@@ -38,7 +38,7 @@ leaf2-DC1:
   lo1: 192.168.102.11
   vMAC: 00:1c:73:00:00:99
 
-leaf3-DC1:
+leaf3:
   asn: 65102
   vrf: VRF-A
   vlans:
@@ -57,7 +57,7 @@ leaf3-DC1:
   lo1: 192.168.102.13
   vMAC: 00:1c:73:00:00:97
 
-leaf4-DC1:
+leaf4:
   asn: 65102
   vrf: VRF-A
   vlans:
@@ -76,7 +76,7 @@ leaf4-DC1:
   lo1: 192.168.102.13
   vMAC: 00:1c:73:00:00:97
   
-borderleaf1-DC1:
+borderleaf1:
   asn: 65103
   vrf: VRF-A
   vrf-VNI: 5050
@@ -84,7 +84,7 @@ borderleaf1-DC1:
   lo0: 192.168.101.21
   lo1: 192.168.102.21
 
-borderleaf2-DC1:
+borderleaf2:
   asn: 65103
   vrf: VRF-A
   vrf-VNI: 5050

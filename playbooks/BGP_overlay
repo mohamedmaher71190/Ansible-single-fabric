@@ -1,26 +1,26 @@
 ---
-- hosts: DC1,DC2
+- hosts: DC1
   tasks:
   - name: Load overlay variable
     include_vars:
-      file: /home/coder/project/persist/Ansible_config_gen/vars/BGP_overlay
+      file: /home/coder/project/labfiles/AnsibleFabric/vars/BGP_overlay
       name: overlay
      
   - name: Load evpn variable
     include_vars:
-      file: /home/coder/project/persist/Ansible_config_gen/vars/EVPN.yaml
+      file: /home/coder/project/labfiles/AnsibleFabric/vars/EVPN.yaml
       name: evpn
 
   - name: create directory for device configs 
     file:
-      path: /home/coder/project/persist/Ansible_config_gen/generated_config/{{inventory_hostname}}
+      path: /home/coder/project/labfiles/AnsibleFabric/generated_config/{{inventory_hostname}}
       state: directory
 
   - name: Create BGP overlay config
     template:
-      src: /home/coder/project/persist/Ansible_config_gen/templates/BGP_overlay.j2
-      dest: /home/coder/project/persist/Ansible_config_gen/generated_config/{{inventory_hostname}}/{{inventory_hostname}}_overlay_BGP.cfg
+      src: /home/coder/project/labfiles/AnsibleFabric/templates/BGP_overlay.j2
+      dest: /home/coder/project/labfiles/AnsibleFabric/generated_config/{{inventory_hostname}}/{{inventory_hostname}}_overlay_BGP.cfg
   - name: Create EVPN  config
     template:
-      src: /home/coder/project/persist/Ansible_config_gen/templates/EVPN.j2
-      dest: /home/coder/project/persist/Ansible_config_gen/generated_config/{{inventory_hostname}}/{{inventory_hostname}}_EVPN.cfg
+      src: /home/coder/project/labfiles/AnsibleFabric/templates/EVPN.j2
+      dest: /home/coder/project/labfiles/AnsibleFabric/generated_config/{{inventory_hostname}}/{{inventory_hostname}}_EVPN.cfg

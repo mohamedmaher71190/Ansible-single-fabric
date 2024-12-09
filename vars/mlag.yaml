@@ -15,28 +15,21 @@ even:
   peer: 172.16.255.1
   bgpsvi: 172.16.253.2/30
   
-leaf1-DC1:
+leaf1:
   mlagtype: odd
   
-leaf3-DC1:
+leaf3:
   mlagtype: odd
-leaf1-DC2:
+
+
+borderleaf1:
   mlagtype: odd
-leaf3-DC2:
-  mlagtype: odd
-borderleaf1-DC1:
-  mlagtype: odd
-borderleaf1-DC2:
-  mlagtype: odd
-leaf2-DC1:
+
+leaf2:
   mlagtype: even
-leaf4-DC1:
+leaf4:
   mlagtype: even
-leaf2-DC2:
+
+borderleaf2:
   mlagtype: even
-leaf4-DC2:
-  mlagtype: even
-borderleaf2-DC1:
-  mlagtype: even
-borderleaf2-DC2:
-  mlagtype: even
+
