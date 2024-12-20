@@ -1,4 +1,4 @@
-path: "/home/coder/project/labfiles/AnsibleFabric/generated_config" 
+path: "/home/coder/project/labfiles/Ansible-single-fabric/generated_config" 
 
 CVP_CONFIGLETS_EVPN:
   spine1_underlay: "{{lookup('file','{{path}}/spine1/spine1_underlay.cfg')}}"

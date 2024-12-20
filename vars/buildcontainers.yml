@@ -1,0 +1,45 @@
+---
+path: "/home/coder/project/labfiles/Ansible-single-fabric/generated_config/static" 
+
+CVP_CONFIGLETS_mlag:
+  mlag_left: "{{lookup('file','{{path}}/mlag_left.cfg')}}"
+  mlag_right: "{{lookup('file','{{path}}/mlag_right.cfg')}}"
+  
+
+
+
+BuildContainers:
+
+  right-mlag: 
+    parentContainerName: Leaf
+    configlets: 
+      - mlag_left
+  left-mlag: 
+    parentContainerName: Leaf
+    configlets: 
+      - mlag_right
+
+
+LeafContainers:
+  - fqdn: 'leaf1'
+    parentContainerName: 'left-mlag'
+    configlets:
+      - 'ATD-INFRA'
+      - 'leaf1-base'
+  - fqdn: 'leaf3'
+    parentContainerName: 'left-mlag'
+    configlets:
+      - 'ATD-INFRA'
+      - 'leaf3-base'
+
+  - fqdn: 'leaf2'
+    parentContainerName: 'right-mlag'
+    configlets:
+      - 'ATD-INFRA'
+      - 'leaf2-base'
+  - fqdn: 'leaf4'
+    parentContainerName: 'right-mlag'
+    configlets:
+      - 'ATD-INFRA'
+      - 'leaf4-base'
+  

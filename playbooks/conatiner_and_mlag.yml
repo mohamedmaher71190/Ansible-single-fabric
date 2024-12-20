@@ -1,0 +1,29 @@
+---
+- name: add container and mlag configlet
+  hosts: CloudVision
+  connection: local
+  vars_files: 
+      - /home/coder/project/labfiles/Ansible-single-fabric/vars/buildcontainers.yml
+  tasks:
+  - name: upload configlets
+    arista.cvp.cv_configlet_v3:
+      configlets: "{{ CVP_CONFIGLETS_mlag }}"
+      state: present 
+
+  - name: build new containers for mlg
+    arista.cvp.cv_container_v3:
+      topology: "{{BuildContainers}}"
+      apply_mode: loose
+
+  - name: Apply configlets
+    arista.cvp.cv_device_v3:
+      devices: "{{ LeafContainers }}"
+      apply_mode: strict
+
+    register: APPLY_RESULTS
+
+
+  - name: Run change control without interaction
+    arista.cvp.cv_task_v3:
+      tasks: "{{ APPLY_RESULTS.taskIds }}"
+      
